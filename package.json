@@ -1,0 +1,24 @@
+{
+  "name": "ics",
+  "version": "1.0.0",
+  "description": "let's do something interesting.",
+  "main": "index.js",
+  "scripts": {
+    "build-css": "tailwindcss build src/style.css -o public/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yashgandhi876/ICS.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yashgandhi876/ICS/issues"
+  },
+  "homepage": "https://github.com/yashgandhi876/ICS#readme",
+  "devDependencies": {
+    "autoprefixer": "^10.2.6",
+    "postcss": "^8.3.0",
+    "tailwindcss": "^2.1.2"
+  }
+}
