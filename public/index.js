@@ -1,14 +1,17 @@
-const btn = document.querySelector('.btn');
+const btn = document.querySelector(".btn");
 
-btn.addEventListener('click',(e)=>{
-    const data = document.querySelector(".inputData");
-    console.dir(data.value);
-    document.querySelector(".showData").innerHTML =  `you typed: ${String(data.value)}`;
-    // document.querySelector(".showData").innerHTML = `you typed ${data.value}`;
+btn.addEventListener("click", (e) => {
+	const data = document.querySelector(".inputData");
+	console.dir(data.value);
+	let value = data.value.replaceAll("<", "1");
+	value = value.replaceAll(">", "0");
 
-})
+	//un commet this line to secure your application
+	// document.querySelector(".showData").innerHTML =  `you typed: ${(value)}`;
 
-
+	// comment this line to secure your application
+	document.querySelector(".showData").innerHTML = `you typed ${data.value}`;
+});
 
 // const root = document.querySelector("#root")
 // const card = document.createElement("div");
@@ -21,7 +24,8 @@ btn.addEventListener('click',(e)=>{
 // card.appendChild(cardData);
 // root.appendChild(card);
 
-{/* <script>
+{
+	/* <script>
 
 const data = `<div class="w-11/12 m-auto p-4 shadow-lg bg-white">
                     <div>
@@ -42,4 +46,5 @@ const card = document.createElement('div');
 card.innerHTML= data;
 
 root.appendChild(card);
-</script> */}
+</script> */
+}
